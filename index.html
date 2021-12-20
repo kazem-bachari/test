@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fontawsom.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>کافی شاپ</title>
 </head>
 
-<body>
+<body onload="localset()" id="body" onscroll="fadeIn(back)">
+    
     <!-- header -->
-    <header>
+    <button id="back" class="backbtn">
+        رفتن به ابتدا صفحه
+    </button>
+    <header class="wow animate__animated animate__fadeIn">
         <div class="overlay_dark">
             <nav>
                 <ul>
@@ -33,15 +38,15 @@
         </div>
     </header>
     <!-- outstory -->
-    <section class="ourstory">
+    <section class="ourstory wow animate__animated animate__fadeInUp ">
         <div class="container">
             <div class="ourstory_row">
-                <div class="ourstory_text">
-                    <h1>این شروع داستان ماست</h1>
-                    <h5>ما با داستانی عاشقانه شروع کردیم,داستانی که شروعش با یک قهوه دونفره بود و حالا هر روز قهوه
+                <div class="ourstory_text ourstory_img ">
+                    <h1 class="wow animate__animated animate__fadeInUp animate__delay-1s">این شروع داستان ماست</h1>
+                    <h5 class="wow animate__animated animate__fadeInUp animate__delay-2s">ما با داستانی عاشقانه شروع کردیم,داستانی که شروعش با یک قهوه دونفره بود و حالا هر روز قهوه
                         های دو نفره زوج های عاشق رو اینحا شاهد هستیم </h5>
                 </div>
-                <div class="ourstory_img">
+                <div class="ourstory_img wow animate__animated animate__fadeInUp delay_05">
                     <img src="images/love.jpg" alt="">
                 </div>
             </div>
@@ -49,20 +54,20 @@
     </section>
     <!-- sweet -->
 
-    <section class="sweet" style=" background: url('../images/backtwo.jpg')  fixed ;
+    <section class="sweet wow animate__animated animate__fadeInUp" style=" background: url('../images/backtwo.jpg')  fixed ;
 ">
         <div class="overlay_dark">
 
         </div>
-        <div class="sweet_text">
-            <h1>فضای صمیمی و دلنشین</h1>
-            <p>ما اینجا کلی دوست باحال داریم اینجا هممون با هم رفیقیم و از لحظات خودمون بهترین استفاده رو میبریم
+        <div class="sweet_text ">
+            <h1 class="wow animate__animated animate__fadeInUp delay_1">فضای صمیمی و دلنشین</h1>
+            <p class="wow animate__animated animate__fadeInUp animate__delay-1-5">ما اینجا کلی دوست باحال داریم اینجا هممون با هم رفیقیم و از لحظات خودمون بهترین استفاده رو میبریم
                 اینجا همه خوبن همه مهربونن و همه سعی میکنن بهترین آدم زندگیشون باشن پس شما هم به ما بپیوند. </p>
         </div>
     </section>
     <!-- menu -->
 
-    <section class="menu">
+    <section class="menu wow animate__animated animate__fadeInUp">
 
         <div class="menu_row">
             <div class="menu_col ourstory_text">
@@ -85,11 +90,11 @@
 
     <!-- sweet2 -->
 
-    <section style="background: url('./images/hot.jpeg ')  fixed ;" class="sweet">
+    <section style="background: url('./images/hot.jpeg ')  fixed ;" class="sweet wow animate__animated animate__fadeInUp">
         <div class="overlay_dark">
 
         </div>
-        <div class="sweet_text">
+        <div class="sweet_text wow animate__animated animate__fadeInUp">
             <h1>داغ و دلنشین</h1>
             <p>
             <h2>با ما همیشه تازه ترین ها را امتحان کنید</h3>
@@ -98,11 +103,11 @@
     </section>
 
     <!-- menu 2 -->
-    <section class="menu">
+    <section class="menu    ">
 
         <div class="menu_row">
             <div class="menu_col ourstory_text">
-                <h1 class="fs-2">فضای صمیمی و دلنشین</h1>
+                <h1 class="fs-2 animate__animated animate__headShake animate__infinite">فضای صمیمی و دلنشین</h1>
                 <p>ما اینجا کلی دوست باحال داریم اینجا هممون با هم رفیقیم و از لحظات خودمون بهترین استفاده رو میبریم
                     اینجا همه خوبن همه مهربونن و همه سعی میکنن بهترین آدم زندگیشون باشن پس شما هم به ما بپیوند. </p>
 
@@ -145,7 +150,18 @@
         <p>هرگونه کپی برداری ممنوع می باشد</p>
         </div>
     </footer>
+    <!-- <ul >
+        <li id="parent"><a>text</a>></li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul> -->
     <script src="js/all.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

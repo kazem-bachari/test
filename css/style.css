@@ -118,6 +118,7 @@ width: 50%;
 .sweet_text{
 color: white;
 z-index: 2;
+ animation-delay: .5s;
 }
 .sweet_text h1{
     margin: 20px 0;
@@ -237,4 +238,31 @@ background-color: burlywood;
 .copywrite p{
 color: red;
 font-weight: bold;
+}
+.delay_05{
+animation-delay: .5s;
+}
+.delay_1{
+animation-delay: 1s;
+}
+.delay_1-5{
+animation-delay: 2s;
+}
+.backbtn{
+    background-color: chocolate;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 40px;
+    border: none;
+    outline: none;
+    position: fixed;
+    right:0 ;
+    bottom: 0;
+    z-index: 10;
+    margin: 20px;
+    display: none;
+}
+.backbtn:hover{
+box-shadow: 0px 5px 5px rgb(172, 125, 93);
+transform: scale(1.07);
 }
